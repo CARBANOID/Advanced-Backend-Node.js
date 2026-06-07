@@ -156,8 +156,6 @@
     ```
 
 
-
-
     ### Comparison 
     Note : autocannon is used to generate HTTP requests to test the performance of the server.
 
@@ -195,7 +193,9 @@
         ```
            pm2 start dist/index.js -i max
         ```
-       
+            
+        `-i max` means to use as many CPU core as there are present (auto-detect).
+
         Terminal 2
         ```
            npx autocannon -a 1200 -c 400 http://localhost:3000/heavy
