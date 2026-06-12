@@ -1,0 +1,6 @@
+services : 
+  redis : 
+    image : redis  # redis image to download
+    ports :
+      # port mapping redis container port to our machine port to be able to use redis in local system
+      - 6379:6379   # redis port is 6379 

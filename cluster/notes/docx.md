@@ -1,4 +1,4 @@
-## Cluster [https://www.digitalocean.com/community/tutorials/how-to-scale-node-js-applications-with-clustering]
+### Cluster [https://www.digitalocean.com/community/tutorials/how-to-scale-node-js-applications-with-clustering]
 ![](clustering.png)
 
 * clustering creates multiple instances of node.js (`worker processes`) that run on OS assigned CPU Cores . 
@@ -15,7 +15,12 @@
    the worker_threads module instead, which allows running multiple application threads within a single Node.js instance.
 
     ---
-    ## How It Works
+    
+    ### Simple analogy
+    * In Bank , multiple kind of clients come with various kind of request and there are multiple employees between whom these requests are distributed and each employee has their own system (resource) and handles the request independently  .
+
+    ---
+    ### How It Works
 
         Incoming Requests
                 ↓
@@ -211,6 +216,10 @@
 * For a single CPU-intensive Node.js process, `worker_threads` creates multiple threads within the same process. 
 * These threads share memory and the OS schedules them across cores, 
 * dividing heavy work efficiently without spawning separate processes.
+
+
+    ### Simple analogy
+    * A Contractor is given a task to dig a hole for underwater tubeline which is a intensive process and therefor , he hires multiple workers to do the work together parallely and they share the same resources (tools) and work together to complete the task faster.
 
 ```
 Single Node.js Process
