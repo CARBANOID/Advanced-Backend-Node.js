@@ -227,7 +227,7 @@ http{
         listen 80 ; 
         location /{   
             # using nginx as a loadbalancer
-                proxy_pass http://server1:7000   # proxy_pass http://<server-name>:<container-port> 
+                proxy_pass http://server1:7000   # proxy_pass http://<container-name>:<container-port> 
         }
     }
 }
@@ -296,7 +296,7 @@ events{
 http{
 
     upstream backend {  # upstream <variable_name>  
-        server server1:7000 ;    #  server <server-name>:<container-port>
+        server server1:7000 ;    #  server <container-name>:<container-port>
         server server2:7000 ;
         server server3:7000 ;
     }
