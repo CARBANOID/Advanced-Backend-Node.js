@@ -35,6 +35,7 @@ In case of horizontal scaling , there are multiple servers (machines) with fixed
 - **Drawback :**
     - The scaling cost is high as we need to maintain multiple servers and load balancer.
     
+---
 
 ### Loading Balancer 
 - Distributes the incoming traffic among multiple backend servers to handle the traffic and reduce the load on each server.
